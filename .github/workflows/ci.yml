@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install --global @microsoft/rusg
+      - run: npm install --global @microsoft/rush
       - run: rush change -v
       - run: rush install
       - run: rush build --verbose
